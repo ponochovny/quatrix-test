@@ -1,0 +1,55 @@
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  margin: 32px auto 16px auto;
+  padding: 20px;
+
+  &.highlight {
+    border-color: purple;
+  }
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+
+  .item {
+    display: flex;
+  }
+  img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    margin-right: 8px;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+#fileElem {
+  display: none;
+}
+
+#progress-bar {
+  width: 100%;
+}

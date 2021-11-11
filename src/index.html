@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quatrix test task</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="login-page">
+            <div class="login-page__container">
+                <div class="login-page__title">Log in</div>
+                <form action="" id="form" class="login-page__form">
+                    <div class="fieldset">
+                        <input type="email" placeholder="Your name" id="userName">
+                    </div>
+                    <div class="fieldset">
+                        <input type="password" placeholder="Your password" id="password">
+                    </div>
+                    <div class="fieldset">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div
+            class="profile-page"
+            style="display: none;"
+        >
+            <div class="profile-page__container">
+                <div class="profile-page__field name">
+                    <div class="profile-page__subtitle">Name</div>
+                    <div class="profile-page__value"></div>
+                </div>
+                <div class="profile-page__field sftp_url">
+                    <div class="profile-page__subtitle">sftp_url</div>
+                    <div class="profile-page__value"></div>
+                </div>
+                <button type="button" id="logOut">Log out</button>
+
+                <!-- DRAG N DROP START -->
+                <div id="drop-area">
+                    <form class="my-form">
+                        <p>Drag and drop your image(s) in this area</p>
+                        <input
+                            type="file"
+                            id="fileElem"
+                            multiple
+                            accept="image/*"
+                        >
+                        <label class="button" for="fileElem">Choose image(s)</label>
+                    </form>
+                    <progress id="progress-bar" max=100 value=0></progress>
+                    <div id="gallery"></div>
+                    <button type="button" id="clearBtn" disabled>Clear</button>
+                </div>
+                <!-- DRAG N DROP END -->
+
+                <button id="onSave" disabled>Save</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
